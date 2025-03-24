@@ -1,3 +1,1 @@
-aiogram
-uvloop
-orjson
+aiogram==3.*
