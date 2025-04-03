@@ -6,7 +6,7 @@ from aiogram.filters import Command
 from aiogram.types import FSInputFile, InlineKeyboardMarkup, InlineKeyboardButton
 import time
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token="8068734237:AAEX9kaR0u1rR8Huha6Ra5FJPNUiztfbH-A")
+bot = Bot(token="7974266342:AAGWy4VOKjLvj0686lpRsaWGGUnebI_2KM8")
 dp = Dispatcher()
 
 keyboard = InlineKeyboardMarkup(inline_keyboard=[
