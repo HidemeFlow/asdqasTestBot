@@ -6,7 +6,7 @@ from aiogram.filters import Command
 from aiogram.types import FSInputFile, InlineKeyboardMarkup, InlineKeyboardButton
 import time
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token="7556829484:AAESxC6eNoq5sdAF8MCIyUN3iC2S3QDlheE")
+bot = Bot(token="8068734237:AAEX9kaR0u1rR8Huha6Ra5FJPNUiztfbH-A")
 dp = Dispatcher()
 
 keyboard = InlineKeyboardMarkup(inline_keyboard=[
@@ -112,7 +112,7 @@ async def process_callback(callback_query: types.CallbackQuery):
 
 @dp.message(Command("start"))
 async def start(message: Message):
-    await callback.message.answer_video("https://thinkandbiz.leadconverter.ru/vfile/8201355")
+    await message.answer_video("https://thinkandbiz.leadconverter.ru/vfile/8201355")
     await message.answer_photo(FSInputFile("files/logo.png"))
     await message.answer("Привет🤗 меня зовут Мирослава Чиж.\n\nСейчас я тебе покажу как ты можешь создать постоянный входящий поток партнеров в свой бизнес.\n\n\nБлагодаря своей системе \"ТУРБО-ПРОКАЧКА СОЦСЕТЕЙ\" и 1 мощному инструменту я ежедневно получаю от 3-5 входящих заявок в бизнес. За несколько месяцев заработала 370тыс  на партнерских программах.\n\n\nСейчас я покажу как ты сможешь выйти на доход от 30тыс уже в первый месяц благодаря системе 👇👇👇\n\n\n✅\"ТУРБО-ПРОКАЧКА СОЦСЕТЕЙ\". Пошаговое обучение по запуску соцсетей в инстаграм,вконтакте,телеграм, ютуб.\n\n✅Чат- Бот рекрутер ,который будет работать 24/7 \n\n\nСЕЙЧАС ПОКАЖУ👇👇👇")
     time.sleep(27)
