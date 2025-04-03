@@ -5,7 +5,6 @@ from aiogram.types import Message
 from aiogram.filters import Command
 from aiogram.types import FSInputFile, InlineKeyboardMarkup, InlineKeyboardButton
 import time
-from aiogram.utils import executor
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token="6261861494:AAE_gezRJezfT3epa06PANT0OKAQQOdMQpc")
 dp = Dispatcher()
@@ -133,5 +132,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True, run_single_instance=True)
-    # asyncio.run(main())
+    # executor.start_polling(dp, skip_updates=True, run_single_instance=True)
+    asyncio.run(main())
